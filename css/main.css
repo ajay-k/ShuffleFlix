@@ -1,0 +1,21 @@
+.container{
+  border: 2px red solid;
+  min-height: 100%;
+  /* height: 100%;
+  width: 100%; */
+  /* position: absolute; */
+
+} 
+
+/* body{
+  height: 100%;
+} */
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px green solid;
+  min-height: 100%;
+  height: 100%;
+}
