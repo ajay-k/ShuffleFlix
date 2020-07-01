@@ -1,5 +1,7 @@
 .container{
-  border: 2px red solid;
+  border-left: 2px red solid;
+  border-right: 2px red solid;
+  border-bottom: 2px red solid;
   min-height: 100vh;
   /* height: 100%;
   width: 100%; */
@@ -15,7 +17,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px green solid;
+  border-left: 2px white solid;
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
   min-height: 100vh;
   color: #f0f8ff;
 }
@@ -31,11 +35,22 @@ nav{
 
 button{
   margin: 15px;
+  background-color:  #E50914!important;;
 }
 
 .input-group{
-  border: 2px green solid;
+  /* border: 2px green solid; */
   display: flex;
   align-items: center;
   width: 450px;
 }
+
+.showIDs{
+  color: white;
+}
+
+.instructions{
+  color: green;
+  padding-top: 100px;
+}
+

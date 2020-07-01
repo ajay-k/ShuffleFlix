@@ -66,12 +66,17 @@ $( document ).ready(function() {
       }
 
       $.ajax(settings).done(function (response) {
-        console.log("REsponse")
+   
+        console.log("Response")
         console.log(response);
         let randomSeason =  Math.floor(Math.random() * (response.length - 0) + 0);
         console.log(randomSeason)
         let randomEp = Math.floor(Math.random() * (response[randomSeason].episodes.length - 0) + 0);
         console.log(response[randomSeason].episodes[randomEp])
+
+        // if(typeof(response[randomSeason]) === "undefined"){
+        //   alert("Error, please check the Netflix and try again")
+        // }
   
         document.getElementById("title").innerHTML = response[randomSeason].episodes[randomEp].title
         document.getElementById("link").href= "https://www.netflix.com/watch/" + response[randomSeason].episodes[randomEp].epid
