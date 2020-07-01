@@ -23,10 +23,40 @@
 
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">ShuffleFlix</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-custom" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">How to use</a>
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <div class="container">
-    <div class="content col-md-12"
-      <h1 id="title">Title: </h1>
-      <h1 id="link">Link: </h1>
+    <div class="content col-md-12">
+      <div class="input-group mb-3">
+        <input id="netflixIDText" type="text" class="form-control" placeholder="Netflix ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button id="netflixIdBtn" class="btn btn btn-primary" type="button">Pick a random episode</button>
+        </div>
+      </div>
+
+      <h1 id="title">Click Random Episdoe Button! </h1>
+      <h2 id="season-title"></h2>
+      <img id="epImg" src="">
+      <h5 id="synopsis"></h5>
+      <a href="" id='link'>Click to watch episode</a>
       <button id="btnClick" type="button" class="btn btn-primary">Pick a random episode</button>
     </div>
   </div>

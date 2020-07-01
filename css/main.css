@@ -1,21 +1,41 @@
 .container{
   border: 2px red solid;
-  min-height: 100%;
+  min-height: 100vh;
   /* height: 100%;
   width: 100%; */
   /* position: absolute; */
 
 } 
 
-/* body{
-  height: 100%;
-} */
+body{
+  background-color: #141414;
+}
 .content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px green solid;
-  min-height: 100%;
-  height: 100%;
+  min-height: 100vh;
+  color: #f0f8ff;
+}
+
+nav{
+  color: red;
+}
+
+.navbar-custom {
+  /* color: #E50914!important; */
+  background-color: #E50914!important;
+}
+
+button{
+  margin: 15px;
+}
+
+.input-group{
+  border: 2px green solid;
+  display: flex;
+  align-items: center;
+  width: 450px;
 }
